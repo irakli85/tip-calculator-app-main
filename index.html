@@ -17,15 +17,59 @@
     <section>
         
         <form class="input" action="">
+
                <label class="input-lebel-one" for="bill">Bill</label>
                <input type="text" name="bill" id="bill" placeholder="0">
-               <img src="./images/icon-dollar.svg" alt="dollar">
+               <img class="dollar-img" src="./images/icon-dollar.svg" alt="dollar">
+
+               <span class="tip-select">Select Tip %</span>
+               <ul>
+                <li>
+                    <button>5%</button>
+                </li>
+                <li>
+                    <button>10%</button>
+                </li>
+                <li>
+                    <button>15%</button>
+                </li>
+                <li>
+                    <button>25%</button>
+                </li>
+                <li>
+                    <button>50%</button>
+                </li>
+                <li>
+                    <input type="text" id="percentage-input" placeholder="Custom">
+                </li>
+               </ul>
+
+               <label class="input-lebel-two" for="people">Number of People</label>
+               <input type="text" name="people" id="people" placeholder="0">
+               <img class="people-img" src="./images/icon-person.svg" alt="person">
         </form>
+           
+
+        <div class="output">
+
+            <div class="tip-amount">
+                <div>
+                    <span class="tip-text">Tip Amount</span>
+                    <span class="person">/ person</span>
+                </div>
+                <span class="number">$0.00</span>
+            </div>
+
+            <div class="total">
+                <div>
+                    <span class="total-text">Total</span>
+                    <span class="person">/ person</span>
+                </div>
+                <span class="number">$0.00</span>
+            </div>
+            <button id="reset">RESET</button>
+        </div>
         
-
-        <form class="output" action="">
-
-        </form>
     </section>
 
     
