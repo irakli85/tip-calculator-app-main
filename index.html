@@ -25,26 +25,28 @@
                <span class="tip-select">Select Tip %</span>
                <ul>
                 <li>
-                    <button>5%</button>
+                    <button class="tips">5%</button>
                 </li>
                 <li>
-                    <button>10%</button>
+                    <button class="tips">10%</button>
                 </li>
                 <li>
-                    <button>15%</button>
+                    <button class="tips">15%</button>
                 </li>
                 <li>
-                    <button>25%</button>
+                    <button class="tips">25%</button>
                 </li>
                 <li>
-                    <button>50%</button>
+                    <button class="tips">50%</button>
                 </li>
                 <li>
                     <input type="text" id="percentage-input" placeholder="Custom">
                 </li>
                </ul>
-
-               <label class="input-lebel-two" for="people">Number of People</label>
+               <div class="zero-label">
+                    <label class="input-lebel-two" for="people">Number of People</label>
+                    <strong id="zero-error">Can’t be zero</strong>
+               </div>
                <input type="text" name="people" id="people" placeholder="0">
                <img class="people-img" src="./images/icon-person.svg" alt="person">
         </form>
@@ -57,7 +59,7 @@
                     <span class="tip-text">Tip Amount</span>
                     <span class="person">/ person</span>
                 </div>
-                <span class="number">$0.00</span>
+                <span class="number" id="tip-per-person">$0.00</span>
             </div>
 
             <div class="total">
@@ -65,7 +67,7 @@
                     <span class="total-text">Total</span>
                     <span class="person">/ person</span>
                 </div>
-                <span class="number">$0.00</span>
+                <span class="number" id="total-per-person">$0.00</span>
             </div>
             <button id="reset">RESET</button>
         </div>

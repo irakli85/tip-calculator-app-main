@@ -8,6 +8,7 @@
     --bg: #C5E4E7;
     --input-bg: #F3F9FA;
     --reset-bg: #0D686D;
+    --hover-bg: #9FE8DF;
 }
 
 label,
@@ -80,6 +81,10 @@ section{
     padding-right: 17px;
 }
 
+#bill:hover{
+    cursor: pointer;
+}
+
 ::placeholder{
     font-family: 'Space Mono';
     font-weight: 700;
@@ -131,6 +136,17 @@ section{
     background: var(--input-bg);
   }
 
+  li button:hover{
+    cursor: pointer;
+    background: var(--hover-bg);
+    color: var(--dark-green);
+    transition: all .3s ease;
+  }
+
+  li input:hover{
+    cursor: pointer;
+  }
+
   #percentage-input{
     text-align: right;
     padding-right: 17px;
@@ -141,8 +157,16 @@ section{
     border:2px solid var(--light-green);
   }
 
-  .input-lebel-two{
+   .zero-label{
     margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #zero-error{
+    font-size: 16px;
+    color: #E17457;
+    display: none;
   }
 
   .people-img{
@@ -207,6 +231,13 @@ section{
     text-align: center;
     color: var(--dark-green);
     opacity: 0.35;    
+}
+
+#reset:hover{
+    cursor: pointer;
+    background: var(--hover-bg);
+    opacity: 1;
+    transition: all .3s ease;  
 }
 
   
