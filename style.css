@@ -150,6 +150,9 @@ input[type=number]::-webkit-outer-spin-button {
     width: 146px;
     border-radius: 5px;
     background: var(--input-bg);
+
+    font-size: 24px;
+    color: #00474B;
     
   }
 
