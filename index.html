@@ -23,30 +23,48 @@
                <img class="dollar-img" src="./images/icon-dollar.svg" alt="dollar">
 
                <span class="tip-select">Select Tip %</span>
-               <ul>
-                <li>
-                    <input type="button" class="tips" value="5%">
-                </li>
-                <li>
-                    <input type="button" class="tips" value="10%">
-                </li>
-                <li>
-                    <input type="button" class="tips" value="15%">
-                </li>
-                <li>
-                    <input type="button" class="tips" value="25%">
-                </li>
-                <li>
-                    <input type="button" class="tips" value="50%">
-                </li>
-                <li>
-                    <input type="text" id="percentage-input" placeholder="Custom">
-                </li>
-               </ul>
+               <div class="percentage">
+            
+                    <label for="5">
+                        <input type="radio" class="tips" name="radio" id="5" value="0.05">
+                        <span>5%</span>
+                    </label>
+                
+            
+                    <label for="10">
+                        <input type="radio" class="tips" name="radio" id="10" value="0.1">
+                        <span>10%</span>
+                    </label>
+                
+            
+                    <label for="15">
+                        <input type="radio" class="tips" name="radio" id="15" value="0.15">
+                        <span>15%</span>
+                    </label>
+                
+            
+                    <label for="25">
+                        <input type="radio" class="tips" name="radio" id="25" value="0.25">
+                         <span>25%</span>
+                    </label>
+                
+            
+                    <label for="50">
+                        <input type="radio" class="tips" name="radio" id="50" value="0.5">
+                        <span>50%</span>
+                    </label>
+                
+            
+                    <input type="number" id="percentage-input" placeholder="Custom">
+                
+               
                <div class="zero-label">
                     <label class="input-lebel-two" for="people">Number of People</label>
                     <strong id="zero-error">Can’t be zero</strong>
                </div>
+
+            </div>
+
                <input type="number" name="people" id="people" placeholder="0">
                <img class="people-img" src="./images/icon-person.svg" alt="person">
         </form>

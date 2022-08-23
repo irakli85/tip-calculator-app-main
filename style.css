@@ -55,6 +55,7 @@ section{
     position: relative;
 }
 
+/* hide arrows from input  */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
@@ -113,17 +114,25 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--gray-2);
   }
 
-  ul{
+  .percentage{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
-  ul li{
+  .percentage span,
+  .zero-label{
     flex-basis: 33%;
   }
 
   .tips{
+        display: none;
+  }
+
+  .percentage span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 16px;
     height: 48px;
     width: 146px;
@@ -135,20 +144,26 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
   }
 
-  li input{
+  #percentage-input{
     margin-top: 16px;
     height: 48px;
     width: 146px;
     border-radius: 5px;
     background: var(--input-bg);
+    
   }
 
-  .tips:hover{
+  .percentage span:hover{
     cursor: pointer;
     background: var(--hover-bg);
     color: var(--dark-green);
     transition: all .3s ease;
   }
+
+  .percentage input:checked + span{    
+    background: var(--hover-bg);
+    color: var(--dark-green);
+      }
 
   li input:hover{
     cursor: pointer;
