@@ -19,25 +19,25 @@
         <form class="input" action="">
 
                <label class="input-lebel-one" for="bill">Bill</label>
-               <input type="text" name="bill" id="bill" placeholder="0">
+               <input type="number" name="bill" id="bill" placeholder="0">
                <img class="dollar-img" src="./images/icon-dollar.svg" alt="dollar">
 
                <span class="tip-select">Select Tip %</span>
                <ul>
                 <li>
-                    <button class="tips">5%</button>
+                    <input type="button" class="tips" value="5%">
                 </li>
                 <li>
-                    <button class="tips">10%</button>
+                    <input type="button" class="tips" value="10%">
                 </li>
                 <li>
-                    <button class="tips">15%</button>
+                    <input type="button" class="tips" value="15%">
                 </li>
                 <li>
-                    <button class="tips">25%</button>
+                    <input type="button" class="tips" value="25%">
                 </li>
                 <li>
-                    <button class="tips">50%</button>
+                    <input type="button" class="tips" value="50%">
                 </li>
                 <li>
                     <input type="text" id="percentage-input" placeholder="Custom">
@@ -47,7 +47,7 @@
                     <label class="input-lebel-two" for="people">Number of People</label>
                     <strong id="zero-error">Can’t be zero</strong>
                </div>
-               <input type="text" name="people" id="people" placeholder="0">
+               <input type="number" name="people" id="people" placeholder="0">
                <img class="people-img" src="./images/icon-person.svg" alt="person">
         </form>
            
@@ -69,7 +69,7 @@
                 </div>
                 <span class="number" id="total-per-person">$0.00</span>
             </div>
-            <button id="reset">RESET</button>
+            <button type="reset" id="reset">RESET</button>
         </div>
         
     </section>
