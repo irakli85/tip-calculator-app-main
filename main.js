@@ -1,19 +1,23 @@
-// variables
+// catch HTML elements
 let billInput = document.querySelector("#bill");
 let percentageInput = document.querySelectorAll(".tips");
 let customInput = document.querySelector("#percentage-input");
 let peopleInput = document.querySelector("#people");
-let tipAmount = document.getElementById("#tip-per-person");
+let tipAmount = document.querySelector("#tip-per-person");
+let totalAmount = document.querySelector("#total-per-person");
 
 
 // default values
 let billValue = 0;
 let customValue = 0;
 let peopleValue = 1;
+let percentageValue = 1;
+
 
 //functions
+
 function billInputFn(){
-    billValue = billInput.value;
+    billValue = billInput.value;    
     console.log(billValue);
 }
 
@@ -31,13 +35,14 @@ function customInputFn(){
 }
 
 function peopleInputFn(){
-    peopleValue = peopleInput.value;
+    peopleValue = peopleInput.value;    
     console.log(peopleValue);
 }
 
 
 
 //event listeners
+
 billValue = addEventListener("input", billInputFn);
 percentageValue = addEventListener("click", percentageInputFn);
 customValue = addEventListener("input", customInputFn);
