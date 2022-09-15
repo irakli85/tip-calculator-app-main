@@ -37,8 +37,8 @@ function customInputFn(){
 }
 
 function resetFn(){
-    billInput.value = 0;
-    peopleInput.value = 1;
+    billInput.value = "";
+    peopleInput.value = "";
     customInput.value = "";
     tipAmount.textContent = "$0.00";
     totalAmount.textContent = "$0.00";    
