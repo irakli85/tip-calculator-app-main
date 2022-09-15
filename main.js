@@ -9,10 +9,10 @@ let resetAll = document.querySelector("#reset");
 
 
 // default values
-// let billValue = 0;
-// let customValue = 0;
-// let peopleValue = 1;
-// let percentageValue = 1;
+let billValue = 0;
+let customValue = 0;
+let peopleValue = 1;
+let percentageValue = 1;
 
 
 //functions
@@ -39,19 +39,18 @@ function customInputFn(){
 function resetFn(){
     billInput.value = 0;
     peopleInput.value = 1;
+    customInput.value = "";
     tipAmount.textContent = "$0.00";
-    totalAmount.textContent = "$0.00";
+    totalAmount.textContent = "$0.00";    
 }
 
 
 function peopleInputFn(){
     peopleValue = Number(peopleInput.value);    
     // console.log(peopleValue);
-    tipAmount.innerText = (billValue * percentageValue) / peopleValue;
-    totalAmount.innerText = (billValue + (billValue * percentageValue)) / peopleValue;
+    tipAmount.innerText = `$` + `${((billValue * percentageValue) / peopleValue).toFixed(2)}`;
+    totalAmount.innerText =`$` + `${((billValue + (billValue * percentageValue)) / peopleValue).toFixed(2)}`;
 }
-
-
 
 
 
